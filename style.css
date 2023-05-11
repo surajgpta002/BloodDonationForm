@@ -1,0 +1,26 @@
+body{
+   background: linear-gradient(to right,rgb(204, 232, 233),rgb(145, 211, 241));
+   font-family: 'Times New Roman', Times, serif;
+}
+
+#bg-logo{
+    position:absolute;
+    left:38%;
+    top:30%;
+    opacity:0.5;
+    z-index: -1;
+}
+
+input,select,textarea{
+    opacity:0.6;
+}
+span{
+    color:red;
+}
+
+@media (max-width:1124px){
+    #bg-logo{
+        width:30vw;
+        height:50vh;
+    }
+}

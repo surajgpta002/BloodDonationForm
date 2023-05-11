@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+    <!-- Importing Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background-image logo -->
+    <img id="bg-logo" src="https://t3.ftcdn.net/jpg/00/87/01/74/360_F_87017407_1FA3pRVHQ4kbqjvg436YydMVVvbhNsfE.jpg" alt="Logo">
+    <!-- Input form -->
+    <form class=".container mx-5">
+        <h1>User Record List</h1>
+        <!-- Username text input -->
+        <div class="mb-3">
+          <label for="inputUsername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="inputUsername" placeholder="Enter your username">
+          <!-- Error display area -->
+          <span id="usernameError"></span>
+        </div>
+        <!-- Email text input -->
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input type="text" class="form-control" id="inputEmail" placeholder="Enter your email">
+          <!-- Error display area -->
+          <span id="emailError"></span>
+        </div>
+        <!-- Blood group dropdown -->
+        <div class="mb-3">
+          <label class="form-check-label" for="selectGroup">Select your blood group</label>
+          <select class="form-select" aria-label="Default select example" id="selectGroup">
+            <option selected>Select</option>
+            <option value="a-plus">A+</option>
+            <option value="a-minus">A-</option>
+            <option value="b-plus">B+</option>
+            <option value="b-minus">B-</option>
+            <option value="o-plus">O+</option>
+            <option value="o-minus">O-</option>
+            <option value="ab-plus">AB+</option>
+            <option value="ab-minus">AB-</option>
+          </select>
+        </div>
+        <!-- Address text area -->
+        <div class="mb-3">
+            <label for="inputAddress" class="form-label">Enter your address</label>
+            <textarea class="form-control" id="inputAddress" rows="3"></textarea>
+        </div>
+        <!-- Phone number text input -->
+        <div class="mb-3">
+            <label for="inputPhone" class="form-label">Enter your phone number</label>
+            <input type="text" class="form-control" id="inputPhone">
+            <!-- Error display area -->
+            <span id="phoneError"></span>
+        </div>
+        <!-- Additional text area -->
+        <div class="mb-3">
+            <label for="inputAdditional" class="form-label">Any other details regarding your medical health</label>
+            <textarea class="form-control" id="inputAdditional" rows="3"></textarea>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    <!-- Importing Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <!-- External Script -->
+    <script src="./app.js"></script>
+</body>
+</html>
